@@ -1,4 +1,4 @@
-# jsonresume-theme-Dave
+# jsonresume-theme-dave-alt
 A compact theme for JSON Resume, designed for printing.
 
 Tries to fit as much information as possible onto a single page without making sections look cluttered.
@@ -23,8 +23,8 @@ http://themes.jsonresume.org/theme/dave
 # If you need to install Node.js:
 #    sudo apt-get install npm
 sudo npm install -g resume-cli
-git clone https://github.com/kneeki/jsonresume-theme-Dave.git
-cd jsonresume-theme-dave
+git clone https://github.com/gadenbuie/jsonresume-theme-dave-alt.git
+cd jsonresume-theme-dave-alt
 sudo npm install
 resume serve
 ```
@@ -32,9 +32,9 @@ You can print directly from the served html.
 
 ## Options
 
-You may toggle `SORT__KEYWORDS` to alphabetically sort the keywords (useful for long arrays) and `CLEAN_DATES` to use shortened dates. See `index.js`.
+You may toggle `SORT_KEYWORDS` to alphabetically sort the keywords (useful for long arrays) and `CLEAN_DATES` to use shortened dates. See `index.js` where you can customize the date format used in each section.
 
-This theme supports a modified `resume.json` schema which allows you to add seperate 'experience' and 'certifications' categories.
+This theme supports a modified `resume.json` schema which allows you to add seperate 'military', 'certifications', and 'presentations' categories.
 
 ```json
 "experience": [
@@ -66,6 +66,15 @@ This theme supports a modified `resume.json` schema which allows you to add sepe
         "url": "https://certification.comptia.org/certifications/network",
         "startDate": "08/01/2004",
         "endDate": ""
+    }
+],
+"presentations": [
+    {
+      "name": "A Really Great Presentation",
+      "date": "2018-01-01",
+      "event": "My Local Meetup", 
+      "website": "",
+      "summary": "The best talk ever."
     }
 ]
 ```
