@@ -205,7 +205,7 @@ th {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
+        /* color: #000 !important; */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
@@ -246,7 +246,10 @@ th {
         widows: 3;
     }
     h2,
-    h3 {
+    h3,
+    h4,
+    h5,
+    h6 {
         page-break-after: avoid;
     }
     .navbar {
@@ -301,7 +304,7 @@ textarea {
     font-size: inherit;
     line-height: inherit;
 }
-a {
+a, a:visited {
     /*color: #337ab7;*/
     color: #ea5359;
     text-decoration: none;
@@ -309,7 +312,7 @@ a {
 a:hover,
 a:focus {
     /*color: #23527c;*/
-    color: #cb484d;
+    /* color: #cb484d; */
     text-decoration: underline;
 }
 a:focus {
@@ -1563,6 +1566,10 @@ body {
     page-break-inside: auto;
 }
 
+.no-page-break-after {
+    page-break-after: avoid;
+}
+
 .no-page-break {
     page-break-inside: avoid;
     page-break-after: auto;
@@ -1611,5 +1618,8 @@ h5 {
     .container {
         margin: 0px;
         padding: 0px;
+    }
+    h6 small {
+        color: #555555;
     }
 }

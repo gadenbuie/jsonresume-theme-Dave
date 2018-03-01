@@ -382,12 +382,12 @@
                 <!-- RIGHT COLUMN: Publications  -->
                 {{#if resume.publications.length}}
                 <div class="print-together">
-                    <div class="no-page-break">
                         <div class="page-header no-margin-bottom lg-margin-top">
                             <h5>Publications</h5>
                         </div>
 
                         {{#each resume.publications}}
+                        <div class="no-page-break">
                         <h6 class="job-title sm-margin-top no-margin">
                             {{#if releaseDate}}
                             <span class="education-date" style="min-width: 48px;">
@@ -406,9 +406,9 @@
                             {{#if summary}}{{summary}}{{/if}}
                         </p>
 
+                        </div>
                         {{/each}}
 
-                    </div>
                 </div>
                 {{/if}}
                 <!-- // RIGHT COLUMN: Publications -->
@@ -417,12 +417,12 @@
                 <!-- RIGHT COLUMN: Presentations  -->
                 {{#if resume.presentations.length}}
                 <div class="print-together">
-                    <div class="no-page-break">
                         <div class="page-header no-margin-bottom lg-margin-top">
                             <h5>Presentations</h5>
                         </div>
 
                         {{#each resume.presentations}}
+                        <div class="no-page-break">
                         <h6 class="job-title sm-margin-top no-margin">
                             {{#if date}}
                             <span class="education-date">
@@ -446,9 +446,9 @@
                             {{#if summary}}{{summary}}{{/if}}
                         </p>
 
+                        </div>
                         {{/each}}
 
-                    </div>
                 </div>
                 {{/if}}
                 <!-- // RIGHT COLUMN: Presentations -->
@@ -456,12 +456,12 @@
                 <!-- RIGHT COLUMN: Projects  -->
                 {{#if resume.projects.length}}
                 <div class="print-together">
-                    <div class="no-page-break">
                         <div class="page-header no-margin-bottom lg-margin-top">
                             <h5>Projects</h5>
                         </div>
 
                         {{#each resume.projects}}
+                        <div class="no-page-break">
                         <h6 class="job-title sm-margin-top no-margin">
                             {{#if date}}
                             <span class="education-date">
@@ -493,9 +493,9 @@
                         </ul>
                         {{/if}}
 
+                        </div>
                         {{/each}}
 
-                    </div>
                 </div>
                 {{/if}}
                 <!-- // RIGHT COLUMN: Projects -->
