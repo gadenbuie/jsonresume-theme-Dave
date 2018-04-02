@@ -189,11 +189,10 @@
                         <div class="clearfix"></div>
 
                         {{#if courses.length}}
-                        <ul class="education-courses no-margin-bottom">
-                            {{#each courses}}
-                            <li>{{.}}</li>
-                            {{/each}}
-                        </ul>
+                        <p class="no-margin">
+                            <strong>Courses: </strong>
+                            {{#each courses}}{{#if @last}}{{.}}{{else}}{{.}}, {{/if}}{{/each}}
+                        </p>
                         {{/if}}
 
                         {{/each}}
