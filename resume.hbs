@@ -463,6 +463,7 @@
 
                         {{#each resume.projects}}
                         <div class="no-page-break">
+                        {{#if name}}
                         <h6 class="job-title sm-margin-top no-margin">
                             {{#if date}}
                             <span class="education-date">
@@ -472,8 +473,8 @@
 
                             {{#if name}}{{name}}{{/if}}
                         </h6>
+                        {{/if}}
                         
-
                         <div class="clearfix"></div>
 
                         <p class="education-details no-margin">
