@@ -1635,6 +1635,15 @@ h5 {
         padding-right: 2mm;
         font-size: 8pt;
     }
+    .col-xs-3 {
+        width: 20%;
+    }
+    .col-xs-9 {
+        width: 80%;
+    }
+    .sm-margin-top {
+        margin: 4px 0px 0px 0px;
+    }
     h6 small {
         color: #555555;
     }
