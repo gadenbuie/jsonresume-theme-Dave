@@ -341,41 +341,43 @@
 
                 <!-- RIGHT COLUMN: Volunteer -->
                 {{#if resume.volunteer.length}}
-                        <div class="page-header no-margin-bottom lg-margin-top">
-                            <h5>Outreach</h5>
-                        </div>
+                <div class="no-page-break">
+                    <div class="page-header no-margin-bottom lg-margin-top">
+                        <h5>Outreach</h5>
+                    </div>
 
-                        {{#each resume.volunteer}}
-                        <div class="no-page-break">
-                        <h6 class="job-title sm-margin-top no-margin">
-                            {{#if startDate}}
-                            <span class="education-date">
-                                {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
-                            </span>
-                            {{/if}}
-
-                            {{#if organization}}{{organization}}{{/if}}
-                        </h6>
-
-                        <div class="clearfix"></div>
-
-                        <p class="education-details no-margin">
-                            {{#if position}}<span style="font-size: 1.1em">{{position}}</span>{{/if}}
-                            {{#if summary}}{{#if position}}<br />{{/if}}{{summary}}{{/if}}
-                        </p>
-
-                        <div class="clearfix"></div>
-
-                        {{#if highlights.length}}
-                        <ul class="no-margin-bottom">
-                            {{#each highlights}}
-                            <li>{{.}}</li>
-                            {{/each}}
-                        </ul>
+                    {{#each resume.volunteer}}
+                    <div class="no-page-break">
+                    <h6 class="job-title sm-margin-top no-margin">
+                        {{#if startDate}}
+                        <span class="education-date">
+                            {{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
+                        </span>
                         {{/if}}
 
-                        </div>
+                        {{#if organization}}{{organization}}{{/if}}
+                    </h6>
+
+                    <div class="clearfix"></div>
+
+                    <p class="education-details no-margin">
+                        {{#if position}}<span style="font-size: 1.1em">{{position}}</span>{{/if}}
+                        {{#if summary}}{{#if position}}<br />{{/if}}{{summary}}{{/if}}
+                    </p>
+
+                    <div class="clearfix"></div>
+
+                    {{#if highlights.length}}
+                    <ul class="no-margin-bottom">
+                        {{#each highlights}}
+                        <li>{{.}}</li>
                         {{/each}}
+                    </ul>
+                    {{/if}}
+
+                    </div>
+                    {{#if @first}}</div>{{/if}} <!-- close div keeping title and first entry together -->
+                    {{/each}}
                 {{/if}}
                 <!-- // RIGHT COLUMN: Volunteer -->
 
@@ -417,7 +419,8 @@
 
                 <!-- RIGHT COLUMN: Presentations  -->
                 {{#if resume.presentations.length}}
-                <div class="print-together">
+                <div class="no-page-break">
+                    <div class="print-together">
                         <div class="page-header no-margin-bottom lg-margin-top">
                             <h5>Selected Presentations</h5>
                         </div>
@@ -448,6 +451,7 @@
                         </p>
 
                         </div>
+                        {{#if @first}}</div>{{/if}}
                         {{/each}}
 
                 </div>
@@ -456,7 +460,8 @@
 
                 <!-- RIGHT COLUMN: Projects  -->
                 {{#if resume.projects.length}}
-                <div class="print-together">
+                <div class="no-page-break">
+                    <div class="print-together">
                         <div class="page-header no-margin-bottom lg-margin-top no-page-break-after">
                             <h5>Projects</h5>
                         </div>
@@ -496,6 +501,7 @@
                         {{/if}}
 
                         </div>
+                        {{#if @first}}</div>{{/if}}
                         {{/each}}
 
                 </div>
